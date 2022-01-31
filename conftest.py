@@ -1,0 +1,1 @@
+pytest_plugins = ["tests.custom_fixtures"]
