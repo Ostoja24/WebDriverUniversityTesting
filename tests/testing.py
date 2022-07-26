@@ -47,7 +47,7 @@ class Testing_class_1():
     def test_04(self,session_browser):
         session_browser.get("https://webdriveruniversity.com/File-Upload/index.html")
         Button = session_browser.find_element(By.CSS_SELECTOR, "input[name = 'filename']")
-        Button.send_keys("C:\Buggy4.bmp")
+        Button.send_keys("C:\Buggy4.bmp") # HERE YOU SHOULD REPLACE PATH BY RANDOM .BMP FILE FROM YOUR LOCAL DISK
         Submit = session_browser.driver.find_element(By.CSS_SELECTOR,"input[id = 'submit-button']")
         Submit.click()
         Text_alert = session_browser.driver.switch_to.alert.text
